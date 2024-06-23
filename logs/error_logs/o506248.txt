@@ -1,0 +1,18 @@
+/scratch/st-sielmann-1/agrobot/grape-ld
+Found 12000 files belonging to 4 classes.
+Using 10800 files for training.
+Found 1770 files belonging to 2 classes.
+Using 1593 files for training.
+Found 4062 files belonging to 4 classes.
+Using 3656 files for training.
+Found 3618 files belonging to 7 classes.
+Using 3257 files for training.
+Found 12000 files belonging to 4 classes.
+Using 1200 files for validation.
+Found 1770 files belonging to 2 classes.
+Using 177 files for validation.
+Found 4062 files belonging to 4 classes.
+Using 406 files for validation.
+Found 3618 files belonging to 7 classes.
+Using 361 files for validation.
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/inception_v3/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5

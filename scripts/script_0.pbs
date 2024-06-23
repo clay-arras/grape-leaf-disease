@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#PBS -l walltime=08:00:00,select=1:ncpus=4:mem=32gb,gpu_mem=32gb
+#PBS -N grape-ld
+#PBS -A st-sielmann-1
+#PBS -m abe
+#PBS -M astrollin.neil@gmail.com
+#PBS -o model_training_output.txt
+#PBS -e model_training_error.txt
+
+module load python/3.10.13
+module load /home/nlin06/miniconda3/envs/grape-ld
+
+cd /arc/project/st-sielmann-1/agrobot/grape-ld
+
+# Now, execute your Python script
+python __main__.py
