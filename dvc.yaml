@@ -1,0 +1,16 @@
+artifacts:
+    grape-ld-cp1135249:
+        path: training/cp1135249/model
+        type: model
+        desc: 'latest model'
+        labels:
+            - cnn
+            - inception
+            - classification
+        meta:
+            framework: keras
+    grape-ld-dataset:
+        path: data/concatenated_datasets/cdata_4
+        type: dataset
+        desc: 'dataset with duplicates'
+
