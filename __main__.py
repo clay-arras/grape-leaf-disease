@@ -1,3 +1,13 @@
+# from clearml import Task
+# task = Task.init(project_name='Test Project', task_name='Init')
+
+from comet_ml import Experiment
+experiment = Experiment(
+	api_key="UJvhHE6aPiPUm97IMdRwt3kiF",
+	project_name="general",
+	workspace="clay-arras"
+)
+
 import numpy as np
 import os
 import PIL
@@ -16,6 +26,7 @@ BATCH_SIZE = 128
 VALIDATION_SPLIT = 0.35
 EPOCHS = 30
 SEED = 123
+DROPOUT = 0.4
 
 
 def load_data():
@@ -79,9 +90,9 @@ def init_model(data, callbacks):
 
     x = layers.Flatten()(pre_trained_model.output)
     x = layers.Dense(1024, activation="relu")(x)
-    x = layers.Dropout(0.4)(x)
+    x = layers.Dropout(DROPOUT)(x)
     x = layers.Dense(1024, activation="relu")(x)
-    x = layers.Dropout(0.4)(x)
+    x = layers.Dropout(DROPOUT)(x)
     x = layers.Dense(4, activation="softmax")(x)
 
     model = Model(pre_trained_model.input, x)
@@ -119,3 +130,14 @@ if __name__ == "__main__":
     history_dict = history.history
     json.dump(history_dict, open("./logs/history.json", "w"))
     print("MODEL SAVED")
+
+
+    hyper_params = {
+	"batch_size": BATCH_SIZE,
+	"validation_split": VALIDATION_SPLIT,
+	"epochs": EPOCHS,
+	"seed": SEED,
+	"dropout": DROPOUT,
+    }
+    experiment.log_parameters(hyper_params)
+
