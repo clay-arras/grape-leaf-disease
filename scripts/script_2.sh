@@ -18,11 +18,11 @@ module load gcc python miniconda3 cuda cudnn
 source ~/.bashrc
 conda activate grape-ld
 
-cd /scratch/st-sielmann-1/agrobot/grape-ld/data/concatenated_datasets
+cd /scratch/st-sielmann-1/agrobot/grape-ld/data/
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-/home/nlin06/miniconda3/envs/grape-ld/bin/python /scratch/st-sielmann-1/agrobot/grape-ld/data/concatenated_datasets/run.py
+python run.py
 
 conda deactivate
- 
+
