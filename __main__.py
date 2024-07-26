@@ -48,10 +48,6 @@ def load_data():
         label_mode="categorical",
     )
 
-    normalization_layer = layers.Rescaling(1.0 / 255)
-    train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
-    dev_ds = dev_ds.map(lambda x, y: (normalization_layer(x), y))
-
     return train_ds, dev_ds
 
 
@@ -90,14 +86,26 @@ def init_model(data, callbacks):
     for layer in pre_trained_model.layers:
         layer.trainable = False
 
-    x = layers.Flatten()(pre_trained_model.output)
-    x = layers.Dense(1024, activation="relu")(x)
-    x = layers.Dropout(DROPOUT)(x)
-    x = layers.Dense(1024, activation="relu")(x)
-    x = layers.Dropout(DROPOUT)(x)
-    x = layers.Dense(4, activation="softmax")(x)
+    data_augmentation = tf.keras.Sequential([
+        layers.RandomFlip("horizontal_and_vertical", seed=SEED),
+        layers.RandomRotation(0.2, seed=SEED),
+        layers.RandomTranslation(height_factor=0.2, width_factor=0.2, seed=SEED),
+        layers.RandomContrast(0.3, seed=SEED),
+    ])
+    normalization_layer = layers.Rescaling(1.0 / 255)
 
-    model = Model(pre_trained_model.input, x)
+    inputs = tf.keras.Input(shape=(256, 256, 3))
+    x = data_augmentation(inputs)
+    x = normalization_layer(x)
+    x = pre_trained_model(x, training=False)
+    x = layers.Flatten()(x)
+    x = layers.Dense(1024, activation="relu")(x)
+    x = layers.Dropout(DROPOUT)(x)
+    x = layers.Dense(1024, activation="relu")(x)
+    x = layers.Dropout(DROPOUT)(x)
+    outputs = layers.Dense(4, activation="softmax")(x)
+
+    model = Model(inputs, outputs)
     model.compile(
         optimizer=RMSprop(learning_rate=0.0001),
         loss="categorical_crossentropy",
