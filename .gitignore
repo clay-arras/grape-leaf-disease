@@ -1,4 +1,5 @@
 data/
 training/
 pretrained_weights/
-/data
+models/
+wandb/

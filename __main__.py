@@ -1,13 +1,3 @@
-# from clearml import Task
-# task = Task.init(project_name='Test Project', task_name='Init')
-
-from comet_ml import Experiment
-experiment = Experiment(
-	api_key="UJvhHE6aPiPUm97IMdRwt3kiF",
-	project_name="general",
-	workspace="clay-arras"
-)
-
 import numpy as np
 import os
 import PIL
@@ -21,12 +11,24 @@ from tensorflow.keras import layers
 from tensorflow.keras.applications.inception_v3 import InceptionV3
 from tensorflow.keras.callbacks import TensorBoard
 from tensorflow.keras.callbacks import CSVLogger
+import os
+import wandb
 
 BATCH_SIZE = 128
 VALIDATION_SPLIT = 0.35
 EPOCHS = 30
 SEED = 123
 DROPOUT = 0.4
+LOG_DIR = "./logs"
+
+os.environ["WANDB__SERVICE_WAIT"] = "300"
+wandb.tensorboard.patch(root_logdir=LOG_DIR)
+wandb.init(
+    project="grape-ld",
+    mode="offline",
+    config=tf.compat.v1.flags,
+    sync_tensorboard=True
+)
 
 
 def load_data():
@@ -38,7 +40,7 @@ def load_data():
     # Labels batch: (64, 10)
 
     train_ds, dev_ds = tf.keras.utils.image_dataset_from_directory(
-	"data/concatenated_datasets/cdata_4",
+	"data/trimmed_dataset",
         validation_split=VALIDATION_SPLIT,
         subset="both",
         seed=SEED,
@@ -57,7 +59,7 @@ def callbacks():
     """
     Adding a bunch of callbacks just to make sure there's information on the training process
     """
-    tensorboard_callback = TensorBoard(log_dir="./logs")
+    tensorboard_callback = TensorBoard(log_dir=LOG_DIR)
     csv_logger = CSVLogger("./logs/training.log")
 
     checkpoint_path = "training/cp-{epoch:04d}.ckpt"
@@ -101,7 +103,7 @@ def init_model(data, callbacks):
         loss="categorical_crossentropy",
         metrics=["acc"],
     )
-    
+
     return model
 
 
@@ -130,14 +132,3 @@ if __name__ == "__main__":
     history_dict = history.history
     json.dump(history_dict, open("./logs/history.json", "w"))
     print("MODEL SAVED")
-
-
-    hyper_params = {
-	"batch_size": BATCH_SIZE,
-	"validation_split": VALIDATION_SPLIT,
-	"epochs": EPOCHS,
-	"seed": SEED,
-	"dropout": DROPOUT,
-    }
-    experiment.log_parameters(hyper_params)
-

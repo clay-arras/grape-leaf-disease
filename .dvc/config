@@ -1,2 +1,5 @@
 [core]
     autostage = true
+    remote = datastore
+['remote "datastore"']
+    url = s3://grape-ld
