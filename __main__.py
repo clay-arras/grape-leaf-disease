@@ -16,7 +16,7 @@ import wandb
 
 BATCH_SIZE = 128
 VALIDATION_SPLIT = 0.35
-EPOCHS = 30
+EPOCHS = 35
 SEED = 123
 DROPOUT = 0.4
 LOG_DIR = "./logs"
@@ -71,12 +71,10 @@ def callbacks():
     return csv_logger, tensorboard_callback, cp_callback
 
 
-def init_model(data, callbacks):
+def init_model():
     """
     Making the actual model
     """
-    csv_logger, tensorboard_callback, cp_callback = callbacks
-    train_ds, dev_ds = data
 
     weights_path = "/scratch/st-sielmann-1/agrobot/grape-ld/pretrained_weights/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5"
     pre_trained_model = InceptionV3(
@@ -89,8 +87,8 @@ def init_model(data, callbacks):
     data_augmentation = tf.keras.Sequential([
         layers.RandomFlip("horizontal_and_vertical", seed=SEED),
         layers.RandomRotation(0.2, seed=SEED),
-        layers.RandomTranslation(height_factor=0.2, width_factor=0.2, seed=SEED),
-        layers.RandomContrast(0.3, seed=SEED),
+        layers.RandomTranslation(height_factor=0.1, width_factor=0.1, seed=SEED),
+        layers.RandomContrast(0.2, seed=SEED),
     ])
     normalization_layer = layers.Rescaling(1.0 / 255)
 
@@ -120,7 +118,7 @@ if __name__ == "__main__":
     print("FINISHED LOADING DATA")
     callbacks = callbacks()
     print("FINISHED INITIALIZING CALLBACKS")
-    model = init_model(data, callbacks)
+    model = init_model()
     print("FINISHED COMPILING MODEL")
 
     train_ds, dev_ds = data
@@ -139,4 +137,5 @@ if __name__ == "__main__":
     model.save_weights("./training/model")
     history_dict = history.history
     json.dump(history_dict, open("./logs/history.json", "w"))
+    tf.saved_model.save(model, "./training/1")
     print("MODEL SAVED")
