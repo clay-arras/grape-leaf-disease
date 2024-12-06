@@ -1,0 +1,56 @@
+Found 3287 files belonging to 4 classes.
+Using 2137 files for training.
+Using 1150 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/30
+Epoch 1: saving model to training/cp-0001.ckpt
+17/17 - 101s - loss: 5.1234 - acc: 0.5073 - val_loss: 0.3406 - val_acc: 0.8774 - 101s/epoch - 6s/step
+Epoch 2/30
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/tokenize.py", line 396, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/tokenize.py", line 365, in detect_encoding
+    first = read_or_stop()
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/tokenize.py", line 323, in read_or_stop
+    return readline()
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 129, in <module>
+    history = model.fit(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1856, in fit
+    val_logs = self.evaluate(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 2296, in evaluate
+    logs = test_function_runner.run_step(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 4108, in run_step
+    tmp_logs = self._function(dataset_or_iterator)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 832, in __call__
+    result = self._call(*args, **kwds)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/polymorphic_function.py", line 877, in _call
+    results = tracing_compilation.call_function(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1323, in _call_flat
+    return self._inference_function.call_preflattened(args)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/context.py", line 1486, in call_function
+    outputs = execute.execute(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt

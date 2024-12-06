@@ -1,0 +1,91 @@
+2024-07-26 07:46:36,713 INFO    StreamThr :2865351 [internal.py:wandb_internal():85] W&B internal server running at pid: 2865351, started at: 2024-07-26 07:46:36.712510
+2024-07-26 07:46:36,715 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status
+2024-07-26 07:46:36,737 INFO    WriterThread:2865351 [datastore.py:open_for_write():87] open: /scratch/st-sielmann-1/agrobot/grape-ld/wandb/offline-run-20240726_074636-bsa6djaq/run-bsa6djaq.wandb
+2024-07-26 07:46:36,871 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: run_start
+2024-07-26 07:46:36,874 DEBUG   HandlerThread:2865351 [system_info.py:__init__():26] System info init
+2024-07-26 07:46:36,874 DEBUG   HandlerThread:2865351 [system_info.py:__init__():41] System info init done
+2024-07-26 07:46:36,874 INFO    HandlerThread:2865351 [system_monitor.py:start():194] Starting system monitor
+2024-07-26 07:46:36,874 INFO    SystemMonitor:2865351 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-26 07:46:36,874 INFO    HandlerThread:2865351 [system_monitor.py:probe():214] Collecting system info
+2024-07-26 07:46:36,875 INFO    SystemMonitor:2865351 [interfaces.py:start():188] Started cpu monitoring
+2024-07-26 07:46:36,875 INFO    SystemMonitor:2865351 [interfaces.py:start():188] Started disk monitoring
+2024-07-26 07:46:36,876 INFO    SystemMonitor:2865351 [interfaces.py:start():188] Started memory monitoring
+2024-07-26 07:46:36,876 INFO    SystemMonitor:2865351 [interfaces.py:start():188] Started network monitoring
+2024-07-26 07:46:36,888 DEBUG   HandlerThread:2865351 [system_info.py:probe():152] Probing system
+2024-07-26 07:46:36,893 DEBUG   HandlerThread:2865351 [system_info.py:_probe_git():137] Probing git
+2024-07-26 07:46:36,923 DEBUG   HandlerThread:2865351 [system_info.py:_probe_git():145] Probing git done
+2024-07-26 07:46:36,923 DEBUG   HandlerThread:2865351 [system_info.py:probe():200] Probing system done
+2024-07-26 07:46:36,923 DEBUG   HandlerThread:2865351 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-362.24.1.el9_3.0.1.x86_64-x86_64-with-glibc2.34', 'python': '3.10.13', 'heartbeatAt': '2024-07-26T14:46:36.888371', 'startedAt': '2024-07-26T14:46:36.701447', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py', 'codePathLocal': '__main__.py', 'codePath': '__main__.py', 'git': {'remote': 'https://clay-arras:@github.com/clay-arras/grape-leaf-disease.git', 'commit': '1180a2f432777373be7c178dc7f9af71a2d052bf'}, 'email': 'nlin06@student.ubc.ca', 'root': '/scratch/st-sielmann-1/agrobot/grape-ld', 'host': 'login02', 'username': 'nlin06', 'executable': '/home/nlin06/miniconda3/envs/grape-ld/bin/python', 'cpu_count': 16, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2828.8125625000002, 'min': 800.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 2400.063, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 2400.012, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}, {'current': 3000.0, 'min': 800.0, 'max': 3000.0}], 'disk': {'/': {'total': 93.76379776000977, 'used': 3.600566864013672}}, 'memory': {'total': 187.5275993347168}}
+2024-07-26 07:46:36,923 INFO    HandlerThread:2865351 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-26 07:46:36,923 INFO    HandlerThread:2865351 [system_monitor.py:probe():227] Publishing system info
+2024-07-26 07:46:36,924 DEBUG   HandlerThread:2865351 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-26 07:46:47,712 DEBUG   HandlerThread:2865351 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-26 07:46:47,714 INFO    HandlerThread:2865351 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-26 07:46:47,752 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:46:47,752 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 07:46:47,752 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:46:47,752 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:46:47,753 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 07:46:47,753 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:46:48,632 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-26 07:46:51,753 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:46:51,754 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:46:56,755 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:46:56,755 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:47:01,756 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:47:01,756 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:47:06,757 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 07:47:06,757 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: status_report
+2024-07-26 07:47:08,749 INFO    HandlerThread:2865351 [handler.py:handle_tbrecord():783] handling tbrecord: tbrecord {
+  log_dir: "./logs/train"
+  root_dir: "./logs"
+  save: true
+}
+control {
+  relay_id: "71f5aee546984b94bc9bbbae241cd1de"
+}
+_info {
+  stream_id: "bsa6djaq"
+}
+
+2024-07-26 07:47:08,751 DEBUG   HandlerThread:2865351 [config_util.py:dict_from_config_file():70] no default config file found in config-defaults.yaml
+2024-07-26 07:47:09,871 DEBUG   SenderThread:2865351 [sender.py:send():379] send: exit
+2024-07-26 07:47:09,871 INFO    SenderThread:2865351 [sender.py:send_exit():586] handling exit code: 1
+2024-07-26 07:47:09,871 INFO    SenderThread:2865351 [sender.py:send_exit():588] handling runtime: 32
+2024-07-26 07:47:09,873 INFO    SenderThread:2865351 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 07:47:09,873 INFO    SenderThread:2865351 [sender.py:send_exit():594] send defer
+2024-07-26 07:47:09,873 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 07:47:09,873 INFO    HandlerThread:2865351 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-26 07:47:09,874 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: defer
+2024-07-26 07:47:09,874 INFO    SenderThread:2865351 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-26 07:47:09,874 INFO    SenderThread:2865351 [sender.py:transition_state():614] send defer: 1
+2024-07-26 07:47:09,874 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 07:47:09,874 INFO    HandlerThread:2865351 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-26 07:47:09,874 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: defer
+2024-07-26 07:47:09,874 INFO    SenderThread:2865351 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-26 07:47:09,874 INFO    SenderThread:2865351 [sender.py:transition_state():614] send defer: 2
+2024-07-26 07:47:09,874 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 07:47:09,874 INFO    HandlerThread:2865351 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-26 07:47:09,875 INFO    HandlerThread:2865351 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-26 07:47:09,875 DEBUG   SystemMonitor:2865351 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-26 07:47:09,875 INFO    HandlerThread:2865351 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-26 07:47:09,875 DEBUG   SystemMonitor:2865351 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-26 07:47:09,876 INFO    HandlerThread:2865351 [interfaces.py:finish():200] Joined disk monitor
+2024-07-26 07:47:09,876 DEBUG   SystemMonitor:2865351 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-26 07:47:09,876 INFO    HandlerThread:2865351 [interfaces.py:finish():200] Joined memory monitor
+2024-07-26 07:47:09,877 INFO    HandlerThread:2865351 [interfaces.py:finish():200] Joined network monitor
+2024-07-26 07:47:09,877 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: defer
+2024-07-26 07:47:09,877 INFO    SenderThread:2865351 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-26 07:47:09,877 INFO    SenderThread:2865351 [sender.py:transition_state():614] send defer: 3
+2024-07-26 07:47:09,877 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 07:47:09,877 INFO    HandlerThread:2865351 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-26 07:47:09,877 DEBUG   SenderThread:2865351 [sender.py:send_request():406] send_request: defer
+2024-07-26 07:47:09,878 INFO    SenderThread:2865351 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-26 07:47:09,878 INFO    SenderThread:2865351 [sender.py:transition_state():614] send defer: 4
+2024-07-26 07:47:09,878 DEBUG   HandlerThread:2865351 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 07:47:09,878 INFO    HandlerThread:2865351 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-26 07:47:17,820 WARNING StreamThr :2865351 [internal.py:is_dead():413] Internal process exiting, parent pid 2865163 disappeared
+2024-07-26 07:47:17,820 ERROR   StreamThr :2865351 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-26 07:47:17,896 INFO    WriterThread:2865351 [datastore.py:close():296] close: /scratch/st-sielmann-1/agrobot/grape-ld/wandb/offline-run-20240726_074636-bsa6djaq/run-bsa6djaq.wandb
+2024-07-26 07:47:17,896 INFO    SenderThread:2865351 [sender.py:finish():1608] shutting down sender
+2024-07-26 07:47:26,512 INFO    HandlerThread:2865351 [handler.py:finish():882] shutting down handler

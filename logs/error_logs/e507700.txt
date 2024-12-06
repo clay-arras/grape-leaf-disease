@@ -1,0 +1,48 @@
+2024-02-08 21:44:22.915673: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-02-08 21:44:23.324660: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-02-08 21:44:23.324740: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-02-08 21:44:23.332622: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-02-08 21:44:23.353736: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-08 21:44:28.276423: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Matplotlib created a temporary cache directory at /tmp/slurm/507700/matplotlib-6kj7urx6 because the default path (/home/nlin06/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2024-02-08 21:44:57.096924: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Traceback (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 182, in <module>
+    history = model.fit(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node categorical_crossentropy/softmax_cross_entropy_with_logits defined at (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 182, in <module>
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1807, in fit
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1401, in train_function
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1384, in step_function
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1373, in run_step
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1151, in train_step
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1209, in compute_loss
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/compile_utils.py", line 277, in __call__
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/losses.py", line 143, in __call__
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/losses.py", line 270, in call
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/losses.py", line 2221, in categorical_crossentropy
+
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/backend.py", line 5579, in categorical_crossentropy
+
+logits and labels must be broadcastable: logits_size=[64,10] labels_size=[64,4]
+	 [[{{node categorical_crossentropy/softmax_cross_entropy_with_logits}}]] [Op:__inference_train_function_12920]

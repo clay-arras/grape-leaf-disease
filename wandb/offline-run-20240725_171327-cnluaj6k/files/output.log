@@ -1,0 +1,20 @@
+Found 3287 files belonging to 4 classes.
+Using 2137 files for training.
+Using 1150 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/30
+Epoch 1: saving model to training/cp-0001.ckpt
+17/17 - 116s - loss: 4.7512 - acc: 0.5840 - val_loss: 0.3334 - val_acc: 0.8609 - 116s/epoch - 7s/step
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Traceback (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 119, in <module>
+    history = model.fit(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1795, in fit
+    self.reset_metrics()
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 2703, in reset_metrics
+    def reset_metrics(self):
+KeyboardInterrupt

@@ -1,0 +1,120 @@
+{
+    "os": "Linux-5.14.0-362.24.1.el9_3.0.1.x86_64-x86_64-with-glibc2.34",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-07-26T14:46:36.888371",
+    "startedAt": "2024-07-26T14:46:36.701447",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py",
+    "codePathLocal": "__main__.py",
+    "codePath": "__main__.py",
+    "git": {
+        "remote": "https://clay-arras:@github.com/clay-arras/grape-leaf-disease.git",
+        "commit": "1180a2f432777373be7c178dc7f9af71a2d052bf"
+    },
+    "email": "nlin06@student.ubc.ca",
+    "root": "/scratch/st-sielmann-1/agrobot/grape-ld",
+    "host": "login02",
+    "username": "nlin06",
+    "executable": "/home/nlin06/miniconda3/envs/grape-ld/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2828.8125625000002,
+        "min": 800.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2400.063,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2400.012,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 3000.0,
+            "min": 800.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 93.76379776000977,
+            "used": 3.600566864013672
+        }
+    },
+    "memory": {
+        "total": 187.5275993347168
+    }
+}

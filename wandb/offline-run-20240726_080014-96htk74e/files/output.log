@@ -1,0 +1,98 @@
+Found 3287 files belonging to 4 classes.
+Using 2137 files for training.
+Using 1150 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/30
+Epoch 1: saving model to training/cp-0001.ckpt
+17/17 - 58s - loss: 6.1573 - acc: 0.4899 - val_loss: 1.1922 - val_acc: 0.5948 - 58s/epoch - 3s/step
+Epoch 2/30
+Epoch 2: saving model to training/cp-0002.ckpt
+17/17 - 53s - loss: 0.9969 - acc: 0.6841 - val_loss: 0.5220 - val_acc: 0.7626 - 53s/epoch - 3s/step
+Epoch 3/30
+Epoch 3: saving model to training/cp-0003.ckpt
+17/17 - 53s - loss: 0.8052 - acc: 0.7141 - val_loss: 0.5739 - val_acc: 0.7678 - 53s/epoch - 3s/step
+Epoch 4/30
+Epoch 4: saving model to training/cp-0004.ckpt
+17/17 - 53s - loss: 0.6690 - acc: 0.7679 - val_loss: 0.3398 - val_acc: 0.8661 - 53s/epoch - 3s/step
+Epoch 5/30
+Epoch 5: saving model to training/cp-0005.ckpt
+17/17 - 53s - loss: 0.5433 - acc: 0.8095 - val_loss: 0.2315 - val_acc: 0.9070 - 53s/epoch - 3s/step
+Epoch 6/30
+Epoch 6: saving model to training/cp-0006.ckpt
+17/17 - 53s - loss: 0.4700 - acc: 0.8217 - val_loss: 0.2509 - val_acc: 0.9157 - 53s/epoch - 3s/step
+Epoch 7/30
+Epoch 7: saving model to training/cp-0007.ckpt
+17/17 - 53s - loss: 0.4430 - acc: 0.8334 - val_loss: 0.4320 - val_acc: 0.8165 - 53s/epoch - 3s/step
+Epoch 8/30
+Epoch 8: saving model to training/cp-0008.ckpt
+17/17 - 53s - loss: 0.3823 - acc: 0.8521 - val_loss: 0.2108 - val_acc: 0.9148 - 53s/epoch - 3s/step
+Epoch 9/30
+Epoch 9: saving model to training/cp-0009.ckpt
+17/17 - 53s - loss: 0.4347 - acc: 0.8474 - val_loss: 0.2282 - val_acc: 0.9165 - 53s/epoch - 3s/step
+Epoch 10/30
+Epoch 10: saving model to training/cp-0010.ckpt
+17/17 - 53s - loss: 0.3293 - acc: 0.8821 - val_loss: 0.1584 - val_acc: 0.9470 - 53s/epoch - 3s/step
+Epoch 11/30
+Epoch 11: saving model to training/cp-0011.ckpt
+17/17 - 53s - loss: 0.3494 - acc: 0.8746 - val_loss: 0.1585 - val_acc: 0.9391 - 53s/epoch - 3s/step
+Epoch 12/30
+Epoch 12: saving model to training/cp-0012.ckpt
+17/17 - 53s - loss: 0.3032 - acc: 0.8910 - val_loss: 0.1313 - val_acc: 0.9513 - 53s/epoch - 3s/step
+Epoch 13/30
+Epoch 13: saving model to training/cp-0013.ckpt
+17/17 - 53s - loss: 0.2647 - acc: 0.9045 - val_loss: 0.2030 - val_acc: 0.9165 - 53s/epoch - 3s/step
+Epoch 14/30
+Epoch 14: saving model to training/cp-0014.ckpt
+17/17 - 53s - loss: 0.3135 - acc: 0.8868 - val_loss: 0.3739 - val_acc: 0.8730 - 53s/epoch - 3s/step
+Epoch 15/30
+Epoch 15: saving model to training/cp-0015.ckpt
+17/17 - 53s - loss: 0.2914 - acc: 0.9003 - val_loss: 0.1138 - val_acc: 0.9635 - 53s/epoch - 3s/step
+Epoch 16/30
+Epoch 16: saving model to training/cp-0016.ckpt
+17/17 - 53s - loss: 0.3117 - acc: 0.8910 - val_loss: 0.1226 - val_acc: 0.9574 - 53s/epoch - 3s/step
+Epoch 17/30
+Epoch 17: saving model to training/cp-0017.ckpt
+17/17 - 53s - loss: 0.3069 - acc: 0.8919 - val_loss: 0.1734 - val_acc: 0.9383 - 53s/epoch - 3s/step
+Epoch 18/30
+Epoch 18: saving model to training/cp-0018.ckpt
+17/17 - 53s - loss: 0.2226 - acc: 0.9195 - val_loss: 0.1227 - val_acc: 0.9591 - 53s/epoch - 3s/step
+Epoch 19/30
+Epoch 19: saving model to training/cp-0019.ckpt
+17/17 - 53s - loss: 0.2277 - acc: 0.9172 - val_loss: 0.2498 - val_acc: 0.9000 - 53s/epoch - 3s/step
+Epoch 20/30
+Epoch 20: saving model to training/cp-0020.ckpt
+17/17 - 53s - loss: 0.2414 - acc: 0.9176 - val_loss: 0.0910 - val_acc: 0.9661 - 53s/epoch - 3s/step
+Epoch 21/30
+Epoch 21: saving model to training/cp-0021.ckpt
+17/17 - 53s - loss: 0.2329 - acc: 0.9195 - val_loss: 0.1367 - val_acc: 0.9496 - 53s/epoch - 3s/step
+Epoch 22/30
+Epoch 22: saving model to training/cp-0022.ckpt
+17/17 - 53s - loss: 0.2189 - acc: 0.9209 - val_loss: 0.1049 - val_acc: 0.9643 - 53s/epoch - 3s/step
+Epoch 23/30
+Epoch 23: saving model to training/cp-0023.ckpt
+17/17 - 53s - loss: 0.2316 - acc: 0.9181 - val_loss: 0.1013 - val_acc: 0.9661 - 53s/epoch - 3s/step
+Epoch 24/30
+Epoch 24: saving model to training/cp-0024.ckpt
+17/17 - 53s - loss: 0.2276 - acc: 0.9158 - val_loss: 0.0911 - val_acc: 0.9670 - 53s/epoch - 3s/step
+Epoch 25/30
+Epoch 25: saving model to training/cp-0025.ckpt
+17/17 - 53s - loss: 0.1986 - acc: 0.9321 - val_loss: 0.1584 - val_acc: 0.9365 - 53s/epoch - 3s/step
+Epoch 26/30
+Epoch 26: saving model to training/cp-0026.ckpt
+17/17 - 53s - loss: 0.2445 - acc: 0.9247 - val_loss: 0.1118 - val_acc: 0.9600 - 53s/epoch - 3s/step
+Epoch 27/30
+Epoch 27: saving model to training/cp-0027.ckpt
+17/17 - 53s - loss: 0.1720 - acc: 0.9373 - val_loss: 0.0836 - val_acc: 0.9713 - 53s/epoch - 3s/step
+Epoch 28/30
+Epoch 28: saving model to training/cp-0028.ckpt
+17/17 - 53s - loss: 0.2100 - acc: 0.9364 - val_loss: 0.0833 - val_acc: 0.9696 - 53s/epoch - 3s/step
+Epoch 29/30
+Epoch 29: saving model to training/cp-0029.ckpt
+17/17 - 53s - loss: 0.1761 - acc: 0.9373 - val_loss: 0.1130 - val_acc: 0.9617 - 53s/epoch - 3s/step
+Epoch 30/30
+Epoch 30: saving model to training/cp-0030.ckpt
+17/17 - 53s - loss: 0.2268 - acc: 0.9256 - val_loss: 0.2656 - val_acc: 0.9096 - 53s/epoch - 3s/step
+FINISHED TRAINING MODEL
+MODEL SAVED

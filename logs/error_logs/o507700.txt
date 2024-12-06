@@ -1,0 +1,20 @@
+Found 12000 files belonging to 4 classes.
+Using 10800 files for training.
+Found 1770 files belonging to 2 classes.
+Using 1593 files for training.
+Found 4062 files belonging to 4 classes.
+Using 3656 files for training.
+Found 3618 files belonging to 7 classes.
+Using 3257 files for training.
+Found 12000 files belonging to 4 classes.
+Using 1200 files for validation.
+Found 1770 files belonging to 2 classes.
+Using 177 files for validation.
+Found 4062 files belonging to 4 classes.
+Using 406 files for validation.
+Found 3618 files belonging to 7 classes.
+Using 361 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/20

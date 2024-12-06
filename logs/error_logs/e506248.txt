@@ -1,0 +1,66 @@
+2024-02-08 12:26:56.983707: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-02-08 12:26:57.803105: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-02-08 12:26:57.803190: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-02-08 12:26:57.820923: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-02-08 12:26:57.845362: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-08 12:27:04.128515: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Matplotlib created a temporary cache directory at /tmp/slurm/506248/matplotlib-t19xrtem because the default path (/home/nlin06/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2024-02-08 12:27:18.072275: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Traceback (most recent call last):
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 1448, in connect
+    super().connect()
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/http/client.py", line 942, in connect
+    self.sock = self._create_connection(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/data_utils.py", line 347, in get_file
+    urlretrieve(origin, fpath, DLProgbar())
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/data_utils.py", line 85, in urlretrieve
+    response = urlopen(url, data)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 186, in <module>
+    train_model(data, callbacks)
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 148, in train_model
+    pre_trained_model = InceptionV3(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/applications/inception_v3.py", line 391, in InceptionV3
+    weights_path = data_utils.get_file(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/data_utils.py", line 351, in get_file
+    raise Exception(error_msg.format(origin, e.errno, e.reason))
+Exception: URL fetch failure on https://storage.googleapis.com/tensorflow/keras-applications/inception_v3/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5: None -- [Errno 101] Network is unreachable

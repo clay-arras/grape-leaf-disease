@@ -1,0 +1,200 @@
+{
+    "os": "Linux-5.14.0-362.24.1.el9_3.0.1.x86_64-x86_64-with-glibc2.34",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-07-26T00:21:19.608054",
+    "startedAt": "2024-07-26T00:21:19.406393",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py",
+    "codePathLocal": "__main__.py",
+    "codePath": "__main__.py",
+    "git": {
+        "remote": "https://github.com/clay-arras/grape-leaf-disease.git",
+        "commit": "024c9cfd2a2ba1073cb475842716d1978a966667"
+    },
+    "email": "nlin06@student.ubc.ca",
+    "root": "/scratch/st-sielmann-1/agrobot/grape-ld",
+    "host": "se005",
+    "username": "nlin06",
+    "executable": "/home/nlin06/miniconda3/envs/grape-ld/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2919.8568437499994,
+        "min": 1000.0,
+        "max": 3700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2800.039,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2524.278,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2511.113,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2799.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2400.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2399.999,
+            "min": 1000.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3700.0,
+            "min": 1000.0,
+            "max": 3700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 93.76203155517578,
+            "used": 2.0237388610839844
+        }
+    },
+    "memory": {
+        "total": 187.52406692504883
+    }
+}

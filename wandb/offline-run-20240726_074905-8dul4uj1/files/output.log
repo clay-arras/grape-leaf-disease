@@ -1,0 +1,33 @@
+Found 3287 files belonging to 4 classes.
+Using 2137 files for training.
+Using 1150 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/30
+Traceback (most recent call last):
+  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 129, in <module>
+    history = model.fit(
+  File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/tmp/__autograph_generated_file7nj4c7za.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1401, in train_function  *
+        return step_function(self, iterator)
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1384, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1373, in run_step  **
+        outputs = model.train_step(data)
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/training.py", line 1150, in train_step
+        y_pred = self(x, training=True)
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "/home/nlin06/miniconda3/envs/grape-ld/lib/python3.10/site-packages/keras/src/engine/input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+    ValueError: Exception encountered when calling layer 'model' (type Functional).
+    Input 0 of layer "inception_v3" is incompatible with the layer: expected shape=(None, 256, 256, 3), found shape=(None, 192, 192, 3)
+    Call arguments received by layer 'model' (type Functional):
+      • inputs=tf.Tensor(shape=(None, 256, 256, 3), dtype=float32)
+      • training=True
+      • mask=None

@@ -1,0 +1,270 @@
+Found 14415 files belonging to 10 classes.
+Using 12974 files for training.
+Using 1441 files for validation.
+FINISHED LOADING DATA
+FINISHED INITIALIZING CALLBACKS
+FINISHED COMPILING MODEL
+Epoch 1/100
+203/203 - 206s - loss: 0.8007 - acc: 0.8156 - val_loss: 0.1949 - val_acc: 0.9368 - 206s/epoch - 1s/step
+Epoch 2/100
+203/203 - 198s - loss: 0.2272 - acc: 0.9297 - val_loss: 0.1287 - val_acc: 0.9688 - 198s/epoch - 977ms/step
+Epoch 3/100
+203/203 - 198s - loss: 0.1462 - acc: 0.9531 - val_loss: 0.1197 - val_acc: 0.9702 - 198s/epoch - 975ms/step
+Epoch 4/100
+
+Epoch 4: saving model to training/cp-0004.ckpt
+203/203 - 200s - loss: 0.0953 - acc: 0.9706 - val_loss: 0.0991 - val_acc: 0.9771 - 200s/epoch - 984ms/step
+Epoch 5/100
+203/203 - 198s - loss: 0.0765 - acc: 0.9763 - val_loss: 0.0966 - val_acc: 0.9743 - 198s/epoch - 975ms/step
+Epoch 6/100
+203/203 - 198s - loss: 0.0532 - acc: 0.9840 - val_loss: 0.0988 - val_acc: 0.9771 - 198s/epoch - 974ms/step
+Epoch 7/100
+
+Epoch 7: saving model to training/cp-0007.ckpt
+203/203 - 199s - loss: 0.0439 - acc: 0.9868 - val_loss: 0.1026 - val_acc: 0.9785 - 199s/epoch - 982ms/step
+Epoch 8/100
+203/203 - 198s - loss: 0.0337 - acc: 0.9903 - val_loss: 0.1535 - val_acc: 0.9729 - 198s/epoch - 977ms/step
+Epoch 9/100
+203/203 - 198s - loss: 0.0294 - acc: 0.9918 - val_loss: 0.0954 - val_acc: 0.9771 - 198s/epoch - 973ms/step
+Epoch 10/100
+
+Epoch 10: saving model to training/cp-0010.ckpt
+203/203 - 199s - loss: 0.0234 - acc: 0.9922 - val_loss: 0.1090 - val_acc: 0.9827 - 199s/epoch - 981ms/step
+Epoch 11/100
+203/203 - 197s - loss: 0.0235 - acc: 0.9931 - val_loss: 0.1103 - val_acc: 0.9813 - 197s/epoch - 973ms/step
+Epoch 12/100
+203/203 - 198s - loss: 0.0196 - acc: 0.9941 - val_loss: 0.1535 - val_acc: 0.9743 - 198s/epoch - 973ms/step
+Epoch 13/100
+
+Epoch 13: saving model to training/cp-0013.ckpt
+203/203 - 198s - loss: 0.0216 - acc: 0.9938 - val_loss: 0.1174 - val_acc: 0.9778 - 198s/epoch - 976ms/step
+Epoch 14/100
+203/203 - 198s - loss: 0.0162 - acc: 0.9955 - val_loss: 0.1293 - val_acc: 0.9806 - 198s/epoch - 974ms/step
+Epoch 15/100
+203/203 - 199s - loss: 0.0113 - acc: 0.9968 - val_loss: 0.0932 - val_acc: 0.9833 - 199s/epoch - 980ms/step
+Epoch 16/100
+
+Epoch 16: saving model to training/cp-0016.ckpt
+203/203 - 199s - loss: 0.0057 - acc: 0.9982 - val_loss: 0.1476 - val_acc: 0.9764 - 199s/epoch - 982ms/step
+Epoch 17/100
+203/203 - 199s - loss: 0.0063 - acc: 0.9977 - val_loss: 0.1039 - val_acc: 0.9827 - 199s/epoch - 981ms/step
+Epoch 18/100
+203/203 - 199s - loss: 0.0049 - acc: 0.9985 - val_loss: 0.1060 - val_acc: 0.9806 - 199s/epoch - 979ms/step
+Epoch 19/100
+
+Epoch 19: saving model to training/cp-0019.ckpt
+203/203 - 200s - loss: 0.0083 - acc: 0.9977 - val_loss: 0.1091 - val_acc: 0.9827 - 200s/epoch - 984ms/step
+Epoch 20/100
+203/203 - 198s - loss: 0.0100 - acc: 0.9971 - val_loss: 0.1121 - val_acc: 0.9799 - 198s/epoch - 974ms/step
+Epoch 21/100
+203/203 - 198s - loss: 0.0070 - acc: 0.9977 - val_loss: 0.1155 - val_acc: 0.9827 - 198s/epoch - 975ms/step
+Epoch 22/100
+203/203 - 197s - loss: 0.0073 - acc: 0.9977 - val_loss: 0.1346 - val_acc: 0.9771 - 197s/epoch - 972ms/step
+Epoch 23/100
+
+Epoch 23: saving model to training/cp-0023.ckpt
+203/203 - 197s - loss: 0.0076 - acc: 0.9978 - val_loss: 0.1016 - val_acc: 0.9820 - 197s/epoch - 971ms/step
+Epoch 24/100
+203/203 - 198s - loss: 0.0050 - acc: 0.9983 - val_loss: 0.1332 - val_acc: 0.9785 - 198s/epoch - 975ms/step
+Epoch 25/100
+203/203 - 196s - loss: 0.0076 - acc: 0.9980 - val_loss: 0.1100 - val_acc: 0.9820 - 196s/epoch - 966ms/step
+Epoch 26/100
+
+Epoch 26: saving model to training/cp-0026.ckpt
+203/203 - 200s - loss: 0.0051 - acc: 0.9985 - val_loss: 0.1372 - val_acc: 0.9833 - 200s/epoch - 984ms/step
+Epoch 27/100
+203/203 - 198s - loss: 0.0031 - acc: 0.9992 - val_loss: 0.1194 - val_acc: 0.9820 - 198s/epoch - 977ms/step
+Epoch 28/100
+203/203 - 197s - loss: 0.0040 - acc: 0.9986 - val_loss: 0.1446 - val_acc: 0.9813 - 197s/epoch - 971ms/step
+Epoch 29/100
+
+Epoch 29: saving model to training/cp-0029.ckpt
+203/203 - 198s - loss: 0.0028 - acc: 0.9991 - val_loss: 0.1189 - val_acc: 0.9820 - 198s/epoch - 973ms/step
+Epoch 30/100
+203/203 - 197s - loss: 0.0018 - acc: 0.9994 - val_loss: 0.1326 - val_acc: 0.9792 - 197s/epoch - 972ms/step
+Epoch 31/100
+203/203 - 197s - loss: 0.0052 - acc: 0.9985 - val_loss: 0.1320 - val_acc: 0.9799 - 197s/epoch - 970ms/step
+Epoch 32/100
+
+Epoch 32: saving model to training/cp-0032.ckpt
+203/203 - 197s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.1336 - val_acc: 0.9806 - 197s/epoch - 972ms/step
+Epoch 33/100
+203/203 - 196s - loss: 0.0037 - acc: 0.9992 - val_loss: 0.1772 - val_acc: 0.9771 - 196s/epoch - 968ms/step
+Epoch 34/100
+203/203 - 197s - loss: 0.0024 - acc: 0.9993 - val_loss: 0.1679 - val_acc: 0.9799 - 197s/epoch - 970ms/step
+Epoch 35/100
+
+Epoch 35: saving model to training/cp-0035.ckpt
+203/203 - 198s - loss: 0.0049 - acc: 0.9987 - val_loss: 0.1444 - val_acc: 0.9820 - 198s/epoch - 977ms/step
+Epoch 36/100
+203/203 - 197s - loss: 0.0047 - acc: 0.9985 - val_loss: 0.1151 - val_acc: 0.9833 - 197s/epoch - 969ms/step
+Epoch 37/100
+203/203 - 197s - loss: 0.0017 - acc: 0.9995 - val_loss: 0.1168 - val_acc: 0.9813 - 197s/epoch - 971ms/step
+Epoch 38/100
+
+Epoch 38: saving model to training/cp-0038.ckpt
+203/203 - 200s - loss: 0.0036 - acc: 0.9989 - val_loss: 0.1422 - val_acc: 0.9847 - 200s/epoch - 983ms/step
+Epoch 39/100
+203/203 - 197s - loss: 0.0039 - acc: 0.9986 - val_loss: 0.1106 - val_acc: 0.9813 - 197s/epoch - 970ms/step
+Epoch 40/100
+203/203 - 199s - loss: 0.0038 - acc: 0.9991 - val_loss: 0.1503 - val_acc: 0.9806 - 199s/epoch - 979ms/step
+Epoch 41/100
+
+Epoch 41: saving model to training/cp-0041.ckpt
+203/203 - 199s - loss: 8.7232e-04 - acc: 0.9998 - val_loss: 0.1404 - val_acc: 0.9827 - 199s/epoch - 979ms/step
+Epoch 42/100
+203/203 - 198s - loss: 0.0015 - acc: 0.9993 - val_loss: 0.1410 - val_acc: 0.9827 - 198s/epoch - 976ms/step
+Epoch 43/100
+203/203 - 198s - loss: 5.8102e-04 - acc: 0.9997 - val_loss: 0.1352 - val_acc: 0.9840 - 198s/epoch - 974ms/step
+Epoch 44/100
+203/203 - 198s - loss: 0.0027 - acc: 0.9993 - val_loss: 0.1166 - val_acc: 0.9827 - 198s/epoch - 976ms/step
+Epoch 45/100
+
+Epoch 45: saving model to training/cp-0045.ckpt
+203/203 - 198s - loss: 0.0018 - acc: 0.9993 - val_loss: 0.1204 - val_acc: 0.9827 - 198s/epoch - 978ms/step
+Epoch 46/100
+203/203 - 198s - loss: 4.3486e-04 - acc: 0.9998 - val_loss: 0.1328 - val_acc: 0.9827 - 198s/epoch - 978ms/step
+Epoch 47/100
+203/203 - 198s - loss: 2.9197e-04 - acc: 0.9999 - val_loss: 0.1288 - val_acc: 0.9854 - 198s/epoch - 978ms/step
+Epoch 48/100
+
+Epoch 48: saving model to training/cp-0048.ckpt
+203/203 - 199s - loss: 0.0011 - acc: 0.9998 - val_loss: 0.1273 - val_acc: 0.9833 - 199s/epoch - 978ms/step
+Epoch 49/100
+203/203 - 197s - loss: 0.0012 - acc: 0.9995 - val_loss: 0.1472 - val_acc: 0.9806 - 197s/epoch - 969ms/step
+Epoch 50/100
+203/203 - 198s - loss: 0.0051 - acc: 0.9986 - val_loss: 0.1787 - val_acc: 0.9792 - 198s/epoch - 976ms/step
+Epoch 51/100
+
+Epoch 51: saving model to training/cp-0051.ckpt
+203/203 - 199s - loss: 0.0012 - acc: 0.9995 - val_loss: 0.1550 - val_acc: 0.9813 - 199s/epoch - 979ms/step
+Epoch 52/100
+203/203 - 198s - loss: 0.0030 - acc: 0.9992 - val_loss: 0.1286 - val_acc: 0.9820 - 198s/epoch - 976ms/step
+Epoch 53/100
+203/203 - 199s - loss: 0.0013 - acc: 0.9997 - val_loss: 0.1435 - val_acc: 0.9820 - 199s/epoch - 982ms/step
+Epoch 54/100
+
+Epoch 54: saving model to training/cp-0054.ckpt
+203/203 - 199s - loss: 4.6707e-04 - acc: 0.9998 - val_loss: 0.1206 - val_acc: 0.9820 - 199s/epoch - 979ms/step
+Epoch 55/100
+203/203 - 198s - loss: 7.0627e-04 - acc: 0.9997 - val_loss: 0.0991 - val_acc: 0.9847 - 198s/epoch - 977ms/step
+Epoch 56/100
+203/203 - 198s - loss: 5.1504e-04 - acc: 0.9999 - val_loss: 0.1154 - val_acc: 0.9827 - 198s/epoch - 974ms/step
+Epoch 57/100
+
+Epoch 57: saving model to training/cp-0057.ckpt
+203/203 - 199s - loss: 6.9193e-04 - acc: 0.9998 - val_loss: 0.1541 - val_acc: 0.9820 - 199s/epoch - 979ms/step
+Epoch 58/100
+203/203 - 198s - loss: 0.0030 - acc: 0.9991 - val_loss: 0.1315 - val_acc: 0.9854 - 198s/epoch - 975ms/step
+Epoch 59/100
+203/203 - 198s - loss: 0.0012 - acc: 0.9995 - val_loss: 0.1295 - val_acc: 0.9820 - 198s/epoch - 975ms/step
+Epoch 60/100
+
+Epoch 60: saving model to training/cp-0060.ckpt
+203/203 - 200s - loss: 0.0016 - acc: 0.9995 - val_loss: 0.1225 - val_acc: 0.9813 - 200s/epoch - 987ms/step
+Epoch 61/100
+203/203 - 199s - loss: 2.5318e-04 - acc: 0.9999 - val_loss: 0.1333 - val_acc: 0.9820 - 199s/epoch - 980ms/step
+Epoch 62/100
+203/203 - 198s - loss: 0.0018 - acc: 0.9995 - val_loss: 0.1399 - val_acc: 0.9833 - 198s/epoch - 976ms/step
+Epoch 63/100
+203/203 - 198s - loss: 5.2286e-04 - acc: 0.9998 - val_loss: 0.1279 - val_acc: 0.9833 - 198s/epoch - 975ms/step
+Epoch 64/100
+
+Epoch 64: saving model to training/cp-0064.ckpt
+203/203 - 199s - loss: 6.6916e-04 - acc: 0.9998 - val_loss: 0.1535 - val_acc: 0.9833 - 199s/epoch - 981ms/step
+Epoch 65/100
+203/203 - 198s - loss: 4.8219e-04 - acc: 0.9998 - val_loss: 0.1464 - val_acc: 0.9820 - 198s/epoch - 976ms/step
+Epoch 66/100
+203/203 - 198s - loss: 4.2441e-04 - acc: 0.9999 - val_loss: 0.1340 - val_acc: 0.9840 - 198s/epoch - 975ms/step
+Epoch 67/100
+
+Epoch 67: saving model to training/cp-0067.ckpt
+203/203 - 200s - loss: 1.5855e-04 - acc: 0.9999 - val_loss: 0.1301 - val_acc: 0.9861 - 200s/epoch - 984ms/step
+Epoch 68/100
+203/203 - 197s - loss: 0.0020 - acc: 0.9993 - val_loss: 0.1530 - val_acc: 0.9827 - 197s/epoch - 972ms/step
+Epoch 69/100
+203/203 - 198s - loss: 7.7428e-04 - acc: 0.9997 - val_loss: 0.1078 - val_acc: 0.9868 - 198s/epoch - 976ms/step
+Epoch 70/100
+
+Epoch 70: saving model to training/cp-0070.ckpt
+203/203 - 197s - loss: 0.0012 - acc: 0.9995 - val_loss: 0.1197 - val_acc: 0.9840 - 197s/epoch - 970ms/step
+Epoch 71/100
+203/203 - 197s - loss: 0.0011 - acc: 0.9997 - val_loss: 0.1271 - val_acc: 0.9840 - 197s/epoch - 973ms/step
+Epoch 72/100
+203/203 - 196s - loss: 1.7663e-04 - acc: 0.9999 - val_loss: 0.1280 - val_acc: 0.9847 - 196s/epoch - 964ms/step
+Epoch 73/100
+
+Epoch 73: saving model to training/cp-0073.ckpt
+203/203 - 197s - loss: 0.0035 - acc: 0.9992 - val_loss: 0.2147 - val_acc: 0.9785 - 197s/epoch - 972ms/step
+Epoch 74/100
+203/203 - 197s - loss: 0.0016 - acc: 0.9993 - val_loss: 0.1206 - val_acc: 0.9840 - 197s/epoch - 969ms/step
+Epoch 75/100
+203/203 - 197s - loss: 4.9066e-04 - acc: 0.9999 - val_loss: 0.1300 - val_acc: 0.9840 - 197s/epoch - 970ms/step
+Epoch 76/100
+
+Epoch 76: saving model to training/cp-0076.ckpt
+203/203 - 199s - loss: 3.6537e-04 - acc: 0.9998 - val_loss: 0.1092 - val_acc: 0.9854 - 199s/epoch - 979ms/step
+Epoch 77/100
+203/203 - 198s - loss: 5.3413e-04 - acc: 0.9998 - val_loss: 0.1388 - val_acc: 0.9827 - 198s/epoch - 978ms/step
+Epoch 78/100
+203/203 - 198s - loss: 3.8782e-04 - acc: 0.9998 - val_loss: 0.1102 - val_acc: 0.9847 - 198s/epoch - 974ms/step
+Epoch 79/100
+
+Epoch 79: saving model to training/cp-0079.ckpt
+203/203 - 200s - loss: 6.1883e-04 - acc: 0.9998 - val_loss: 0.1450 - val_acc: 0.9806 - 200s/epoch - 983ms/step
+Epoch 80/100
+203/203 - 198s - loss: 9.5868e-05 - acc: 1.0000 - val_loss: 0.1306 - val_acc: 0.9854 - 198s/epoch - 978ms/step
+Epoch 81/100
+203/203 - 199s - loss: 6.0001e-04 - acc: 0.9999 - val_loss: 0.1600 - val_acc: 0.9813 - 199s/epoch - 978ms/step
+Epoch 82/100
+
+Epoch 82: saving model to training/cp-0082.ckpt
+203/203 - 199s - loss: 3.8579e-04 - acc: 0.9998 - val_loss: 0.1227 - val_acc: 0.9833 - 199s/epoch - 979ms/step
+Epoch 83/100
+203/203 - 199s - loss: 1.8028e-04 - acc: 0.9999 - val_loss: 0.1375 - val_acc: 0.9847 - 199s/epoch - 978ms/step
+Epoch 84/100
+203/203 - 198s - loss: 7.1118e-05 - acc: 1.0000 - val_loss: 0.1284 - val_acc: 0.9840 - 198s/epoch - 977ms/step
+Epoch 85/100
+203/203 - 199s - loss: 2.3510e-04 - acc: 0.9999 - val_loss: 0.1443 - val_acc: 0.9813 - 199s/epoch - 980ms/step
+Epoch 86/100
+
+Epoch 86: saving model to training/cp-0086.ckpt
+203/203 - 199s - loss: 2.9461e-04 - acc: 0.9999 - val_loss: 0.1244 - val_acc: 0.9840 - 199s/epoch - 982ms/step
+Epoch 87/100
+203/203 - 197s - loss: 3.9857e-05 - acc: 1.0000 - val_loss: 0.1289 - val_acc: 0.9847 - 197s/epoch - 970ms/step
+Epoch 88/100
+203/203 - 197s - loss: 1.1384e-04 - acc: 0.9999 - val_loss: 0.1375 - val_acc: 0.9847 - 197s/epoch - 969ms/step
+Epoch 89/100
+
+Epoch 89: saving model to training/cp-0089.ckpt
+203/203 - 198s - loss: 2.7279e-05 - acc: 1.0000 - val_loss: 0.1295 - val_acc: 0.9854 - 198s/epoch - 975ms/step
+Epoch 90/100
+203/203 - 196s - loss: 2.4402e-05 - acc: 1.0000 - val_loss: 0.1241 - val_acc: 0.9861 - 196s/epoch - 968ms/step
+Epoch 91/100
+203/203 - 197s - loss: 6.8479e-05 - acc: 1.0000 - val_loss: 0.1274 - val_acc: 0.9861 - 197s/epoch - 969ms/step
+Epoch 92/100
+
+Epoch 92: saving model to training/cp-0092.ckpt
+203/203 - 198s - loss: 8.4990e-05 - acc: 1.0000 - val_loss: 0.1751 - val_acc: 0.9820 - 198s/epoch - 977ms/step
+Epoch 93/100
+203/203 - 196s - loss: 4.4170e-04 - acc: 0.9998 - val_loss: 0.1571 - val_acc: 0.9827 - 196s/epoch - 966ms/step
+Epoch 94/100
+203/203 - 197s - loss: 1.4321e-04 - acc: 0.9999 - val_loss: 0.1505 - val_acc: 0.9847 - 197s/epoch - 969ms/step
+Epoch 95/100
+
+Epoch 95: saving model to training/cp-0095.ckpt
+203/203 - 198s - loss: 6.3724e-04 - acc: 0.9997 - val_loss: 0.1644 - val_acc: 0.9827 - 198s/epoch - 975ms/step
+Epoch 96/100
+203/203 - 197s - loss: 5.9884e-05 - acc: 1.0000 - val_loss: 0.1506 - val_acc: 0.9833 - 197s/epoch - 970ms/step
+Epoch 97/100
+203/203 - 197s - loss: 5.1894e-04 - acc: 0.9998 - val_loss: 0.1454 - val_acc: 0.9840 - 197s/epoch - 972ms/step
+Epoch 98/100
+
+Epoch 98: saving model to training/cp-0098.ckpt
+203/203 - 198s - loss: 6.9093e-04 - acc: 0.9997 - val_loss: 0.1387 - val_acc: 0.9840 - 198s/epoch - 977ms/step
+Epoch 99/100
+203/203 - 197s - loss: 2.7912e-05 - acc: 1.0000 - val_loss: 0.1227 - val_acc: 0.9847 - 197s/epoch - 971ms/step
+Epoch 100/100
+203/203 - 198s - loss: 0.0012 - acc: 0.9998 - val_loss: 0.1754 - val_acc: 0.9827 - 198s/epoch - 976ms/step
+FINISHED TRAINING MODEL
+MODEL SAVED

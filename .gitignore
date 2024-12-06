@@ -5,5 +5,3 @@ data/similarity/logs/
 training/
 pretrained_weights/
 models/
-wandb/
-logs/
