@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/scratch/st-sielmann-1/agrobot/grape-ld/__main__.py", line 1, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'

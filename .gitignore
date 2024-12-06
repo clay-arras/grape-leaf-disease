@@ -1,5 +1,9 @@
-data/
+.dvc/
+data/grape_dataset/
+data/trimmed_dataset/
+data/similarity/logs/
 training/
 pretrained_weights/
 models/
 wandb/
+logs/
